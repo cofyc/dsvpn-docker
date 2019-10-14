@@ -1,0 +1,10 @@
+dist: xenial
+services: docker
+script:
+  - make build
+
+deploy:
+  - provider: script
+    script: make build PUSH=true
+    on:
+      branch: master
