@@ -1,0 +1,19 @@
+name: build
+
+on:
+  pull_request:
+    branches:
+    - master
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: build images
+      run: make build
+    - name: push images
+      run: make push
+      if: github.event_name == 'push' && github.ref == 'master'
