@@ -10,7 +10,7 @@ RUN set -x \
 
 # For security, we use kubernetes community maintained debian base image.
 # https://github.com/kubernetes/kubernetes/blob/master/build/debian-base/
-FROM k8s.gcr.io/debian-base:0.4.1
+FROM k8s.gcr.io/debian-base:v1.0.0
 
 COPY --from=builder /dsvpn/dsvpn /usr/local/bin/dsvpn
 
