@@ -15,4 +15,5 @@ docker run --name dsvpn.service \
   server /etc/dsvpn.key auto 443
 ```
 
-`/etc/dsvpn.key` is your VPN secure key.
+- `/etc/dsvpn.key` is your VPN secure key.
+- This command runs in foreground, you can run the container in background by adding `-d` flag to `docker run`.
