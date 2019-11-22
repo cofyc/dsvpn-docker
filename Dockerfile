@@ -1,5 +1,5 @@
 ARG GIT_REF=master
-FROM k8s.gcr.io/debian-base:0.4.1 as builder
+FROM k8s.gcr.io/debian-base:v1.0.0 as builder
 
 WORKDIR /dsvpn
 
