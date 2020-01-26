@@ -3,7 +3,7 @@ all: build push
 .PHONY: all
 
 build:
-	./build.sh
+	./hack/build.sh
 
 push:
-	./push.sh
+	./hack/push.sh
